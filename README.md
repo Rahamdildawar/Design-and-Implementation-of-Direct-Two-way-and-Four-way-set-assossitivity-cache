@@ -129,7 +129,7 @@ All designs were evaluated with a **32-bit address space**, a **16 KB L1 cache**
 ### Hit Rate Results
 
 <p align="center">
-  <img src="assets/hit_rate_chart.png" alt="Hit rate comparison across workloads and cache architectures" width="85%">
+  <img src="hit_rate_chart.png" alt="Hit rate comparison across workloads and cache architectures" width="85%">
 </p>
 
 ### Average Memory Access Time (AMAT)
@@ -141,7 +141,7 @@ All designs were evaluated with a **32-bit address space**, a **16 KB L1 cache**
 | **4-Way LRU** | **1.80** | **5.00** | **2.00** | **3.00** |
 
 <p align="center">
-  <img src="assets/amat_chart.png" alt="AMAT vs. associativity across workloads" width="85%">
+  <img src="amat_chart.png" alt="AMAT vs. associativity across workloads" width="85%">
 </p>
 
 ### 3C Miss-Rate Breakdown (Workload W4)
@@ -161,7 +161,7 @@ Compulsory and capacity miss rates stay constant across designs (same working se
 Higher associativity costs area through three mechanisms: extra tag SRAM, wider parallel comparators, and replacement-state storage.
 
 <p align="center">
-  <img src="assets/area_chart.png" alt="Relative hardware area overhead by component" width="85%">
+  <img src="area_chart.png" alt="Relative hardware area overhead by component" width="85%">
 </p>
 
 | Architecture | Data SRAM | Tag SRAM | Control | **Total Area** |
