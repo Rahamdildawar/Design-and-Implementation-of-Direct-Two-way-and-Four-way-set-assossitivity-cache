@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.png" alt="Cache Memory Design and Analysis Banner" width="100%">
+  <img src="banner.png" alt="Cache Memory Design and Analysis Banner" width="100%">
 
   <br/>
 
