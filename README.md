@@ -73,7 +73,7 @@ Each memory block maps to exactly **one** cache line, selected by the index bits
 | Replacement logic | None (direct overwrite) |
 | Conflict misses | High |
 | Best suited for | IoT / microcontrollers |
-
+ <img src="direct map cache timing diagram.png" alt="Direct map timing diagram" width="100%">
 ### 2. 2-Way Set-Associative Cache (LRU)
 
 Each set holds **two** ways. A single LRU bit per set tracks which way was least recently used, halving conflict misses relative to the direct-mapped design at negligible hardware cost.
@@ -83,7 +83,7 @@ Hit on Way 0  →  LRU bit ← 1   (Way 1 becomes LRU)
 Hit on Way 1  →  LRU bit ← 0   (Way 0 becomes LRU)
 Miss          →  Evict the way indicated by the LRU bit
 ```
-
+ <img src="two_way=assossitivity_timing_diagram.png" alt="Two set assossitivity cache design " width="100%">
 ### 3. 4-Way Set-Associative Cache (Pseudo-LRU)
 
 Each set holds **four** ways. True LRU would require `⌈log2(4!)⌉ = 5` bits per set; instead, a **3-bit pseudo-LRU binary tree** is used, which achieves 98–99% of true LRU's hit rate at far lower hardware cost.
@@ -99,7 +99,7 @@ Each set holds **four** ways. True LRU would require `⌈log2(4!)⌉ = 5` bits p
 </div>
 
 ---
-
+ <img src="four_way=assossitivity_timing_diagram.png" alt="Four set assossitivity cache design " width="100%">
 ## Replacement Policy: LRU & PLRU
 
 | Policy | Bits / Set (N = 4) | Hit-Rate vs. True LRU | Hardware Cost |
